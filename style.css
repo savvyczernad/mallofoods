@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    height: 85vh;
+    background: url(./image\ assets/herobackground.png) no-repeat;
+    background-size: cover;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav{
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 12px 120px;
+    z-index: 2;
+    position: relative;
+}
+
+.nav-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* z-index: 2; */
+}
+
+/* nav img{
+    z-index: 2;
+} */
+
+.nav-lists li{
+    padding: 8px 24px;
+}
+
+.nav-lists li a{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+button{
+    border: none;
+    padding: 10px 22px;
+    background-color: rgba(170, 8, 28, 1);
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    text-transform: capitalize;
+    /* z-index: 2; */
+}
+
+.hero-content{
+    margin: 108px 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.text-content h1, h4, p{
+    text-align: center;
+}
+
+.text-content h1{
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    color: rgba(170, 8, 28, 1);
+}
+
+.text-content h4{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+.text-content p{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 16px 0px;
+}
+
+.text-content span{
+    color: rgba(255, 206, 81, 1);
+}
+
+/* first section */
+
+.first-section{
+    height: 640px;
+    background-color: red;
+}
+
+.top{
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: yellow;
+}
+
+.bottom{
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: green;
+}
+
+.container{
+    height: 320px;
+    width: 675px;
+}
+
+.image-top, .image-bottom{
+    overflow: hidden;
+    position: relative;
+}
+
+.content-top, .content-bottom{
+    background-color: white;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-top h2, .content-bottom h2{
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(170, 8, 28, 1);
+}
+
+.content-top p, .content-bottom p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* first section ends */
+
+/* menu section */
+
+.menu-section{
+    height: 532px;
+    padding: 48px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: url(./image\ assets/menu-background.png) no-repeat;
+    background-size: cover;
+}
+
+.menu-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 532px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.menu-lists{
+    height: 224px;
+    width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.menu-section h2{
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(170, 8, 28, 1);
+    z-index: 2;
+}
+
+.menu-section button{
+    z-index: 2;
+}
+
+.list1, .list2, .list3, .list4, .list5, .list6{
+    height: 224px;
+    width: 187px;
+    background-color: white;
+    position: relative;
+}
+
+.image{
+    height: 144px;
+    width: 187px;
+    overflow: hidden;
+    position: relative;
+}
+
+.list1 p, .list2 p, .list3 p, .list4 p, .list5 p, .list6 p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.list1 button, .list2 button, .list3 button, .list4 button, .list5 button, .list6 button{
+    padding: 6px 16px;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+/* menu section ends */
+
+/* booking section */
+
+.booking{
+    height: 792px;
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+}
+
+.dinning, .booking-content{
+    width: 720px;
+    height: 792px;
+}
+
+.booking-content{
+    background-color: white;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-content h2{
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(170, 8, 28, 1);
+}
+
+.booking-content p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.booking-content button{
+    margin-top: 16px;
+}
+
+/* booking section ends */
+
+/* social media section */
+
+.social-media{
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .sm-image{
+    width: 675px;
+}
+
+.sm-contents{
+    width: 675px;
+} */
+
+.sm-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.sm-contents{
+    width: 755px;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm-contents h2{
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(170, 8, 28, 1);
+}
+
+.sm-contents p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+img.twitter{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 6px 4px;
+    background: rgba(29, 155, 240, 0.10);
+}
+
+img.whatsapp{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 6px 4px;
+    background: rgba(96, 214, 105, 0.10);
+}
+
+img.instagram{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 6px 4px;
+    background: linear-gradient(148deg, rgba(73, 98, 202, 0.15) 15.35%, rgba(177, 57, 165, 0.15) 33.55%, rgba(240, 76, 92, 0.15) 56.43%, rgba(255, 143, 72, 0.15) 69.08%, rgba(255, 206, 82, 0.15) 78.78%);
+}
+
+img.tiktok{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 6px 4px;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+img.facebook{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 6px 4px;
+    background: rgba(24, 119, 242, 0.10);
+
+
+}
+
+/* social media section ends */
+
+
+/* footer starts */
+
+footer{
+    height: 300px;
+    background-color: rgba(48, 48, 48, 1);
+    padding: 91px 120px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-contact{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+footer p, a{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-contact p{
+    text-align: left;
+}
+
+.address, .phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+
+.footer-icon, img{
+    padding-right: 10px;
+}
+
+.est-date{
+    margin-top: 40px;
+}
+
+/* footer ends */
